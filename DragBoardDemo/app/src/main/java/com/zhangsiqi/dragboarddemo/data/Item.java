@@ -1,4 +1,4 @@
-package com.zhangsiqi.dragboarddemo;
+package com.zhangsiqi.dragboarddemo.data;
 
 /**
  * Created by zhangsiqi on 2016/9/11.

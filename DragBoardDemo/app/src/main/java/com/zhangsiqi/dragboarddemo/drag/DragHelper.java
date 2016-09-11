@@ -1,4 +1,4 @@
-package com.zhangsiqi.dragboarddemo;
+package com.zhangsiqi.dragboarddemo.drag;
 
 import android.app.Activity;
 import android.content.Context;
@@ -14,6 +14,12 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
+
+import com.zhangsiqi.dragboarddemo.utils.AttrAboutPhone;
+import com.zhangsiqi.dragboarddemo.utils.Logger;
+import com.zhangsiqi.dragboarddemo.adapter.RecyclerViewHorizontalDataAdapter;
+import com.zhangsiqi.dragboarddemo.adapter.RecyclerViewVerticalDataAdapter;
+import com.zhangsiqi.dragboarddemo.pager.PagerRecyclerView;
 
 import java.util.Timer;
 import java.util.TimerTask;

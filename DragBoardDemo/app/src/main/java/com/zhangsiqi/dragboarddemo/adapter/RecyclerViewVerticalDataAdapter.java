@@ -1,4 +1,4 @@
-package com.zhangsiqi.dragboarddemo;
+package com.zhangsiqi.dragboarddemo.adapter;
 
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
@@ -6,6 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.zhangsiqi.dragboarddemo.MainActivity;
+import com.zhangsiqi.dragboarddemo.R;
+import com.zhangsiqi.dragboarddemo.data.Item;
 
 import java.util.Collections;
 import java.util.List;

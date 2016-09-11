@@ -1,4 +1,4 @@
-package com.zhangsiqi.dragboarddemo;
+package com.zhangsiqi.dragboarddemo.adapter;
 
 import android.app.Activity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -7,6 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.zhangsiqi.dragboarddemo.R;
+import com.zhangsiqi.dragboarddemo.data.Entry;
+import com.zhangsiqi.dragboarddemo.data.Item;
 
 import java.util.List;
 
@@ -75,7 +79,7 @@ public class RecyclerViewHorizontalDataAdapter extends RecyclerView.Adapter<Recy
             return TYPE_FOOTER;
         return TYPE_CONTENT;
     }
-    static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView tv_title;
         RecyclerView rv_item;

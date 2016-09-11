@@ -1,4 +1,4 @@
-package com.zhangsiqi.dragboarddemo;
+package com.zhangsiqi.dragboarddemo.pager;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

@@ -1,9 +1,11 @@
-package com.zhangsiqi.dragboarddemo;
+package com.zhangsiqi.dragboarddemo.drag;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.RelativeLayout;
+
+import com.zhangsiqi.dragboarddemo.drag.DragHelper;
 
 /**
  * 配合 {@link DragHelper} 实现拖拽的根布局
