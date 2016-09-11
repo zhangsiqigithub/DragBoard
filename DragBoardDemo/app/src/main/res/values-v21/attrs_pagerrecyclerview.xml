@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <declare-styleable name="RecyclerViewPager">
+        <attr name="RecyclerViewPager_triggerOffset" format="float" />
+        <attr name="RecyclerViewPager_flingFactor" format="float" />
+        <attr name="RecyclerViewPager_singlePageFling" format="boolean" />
+    </declare-styleable>
+
+</resources>
