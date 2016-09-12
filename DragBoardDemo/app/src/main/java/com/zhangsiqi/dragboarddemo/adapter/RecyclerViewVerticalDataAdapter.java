@@ -100,22 +100,27 @@ public class RecyclerViewVerticalDataAdapter extends RecyclerView.Adapter<Recycl
 
     public void updateDragItemVisibility(int position) {
         if (mDragPosition >= 0 && mDragPosition < mData.size() && position < mData.size() && mDragPosition != position) {
-            notifyItemChanged(mDragPosition);
             if (Math.abs(mDragPosition - position) == 1) {
+                notifyItemChanged(mDragPosition);
                 Collections.swap(mData, mDragPosition, position);
+                mDragPosition = position;
+                notifyItemChanged(position);
             } else {
+                notifyItemChanged(mDragPosition);
                 if (mDragPosition > position) {
                     for (int i = mDragPosition; i > position; i--) {
                         Collections.swap(mData, i, i - 1);
+                        notifyItemChanged(i);
                     }
                 } else {
                     for (int i = mDragPosition; i < position; i++) {
                         Collections.swap(mData, i, i + 1);
+                        notifyItemChanged(i);
                     }
                 }
+                mDragPosition = position;
+                notifyItemChanged(position);
             }
-            mDragPosition = position;
-            notifyItemChanged(position);
         }
     }
 
